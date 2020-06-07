@@ -54,5 +54,63 @@ For larvicide implementation, if the disease control authorities are able to hal
 
 More data can certainly be gathered about personal protective measures for an added layer of protections. Such measures can include mosquito repellents in the form of sprays, coils and patches. If the denizens of Chicago were to be aware of prevention measures, it maybe even a better solution than chemical fogging of mosquitoes.  
 
+### References
+
+ Data dictionary
+
+
+|Feature|Type|Description|
+| --- | --- | --- |
+ |Id  <br/>(train.csv)            |int      | the id of the record
+ |Date <br/>(train.csv)          |datetime      |date the WNV test is performed
+ |Address <br/>(train.csv)     |datetime | approximate address of the location of trap. This is used to send to the GeoCoder
+ |Species  <br/>(train.csv)       |str      | the species of mosquitos
+ |Block <br/>(train.csv)        |str      |block number of address
+ |Street <br/>(train.csv)       |str      |street name
+ |Trap <br/>(train.csv)         |str    |ID  of the trap
+ |AddressNumberAndStreet <br/>(train.csv)|str| approximate address returned from GeoCoder
+ |Latitude <br/>(train.csv)           |float|latitude and Longitude returned from GeoCoder
+ |Longitude <br/>(train.csv)           |float| longitude and Longitude returned from GeoCoder
+ |AddressAccuracy <br/>(train.csv)     |int| accuracy returned from GeoCode
+ |NumMosquitos <br/>(train.csv)       |int      | number of mosquitoes caught in the specific trap
+ |WnvPresent  <br/>(train.csv)         |int      | whether West Nile Virus was present in the mosquitos in the traps. 1 means WNV is present, and 0 means not present
+ |Date <br/>(spray.csv)|datetime | date of spray
+ |Time <br/>(spray.csv)        |datetime      | time of the spray
+ |Latitude <br/>(spray.csv)|float| latitude of spray
+ |Longitude <br/>(spray.csv)       |float| longitude of the spray
+ |Station <br/>(weather.csv) |int| weather station ID
+ |Date  <br/>(weather.csv)   |datetime| date of weather measurement
+ |Tmax  <br/>(weather.csv)   |int| maximum temperature (F)
+ |Tmin  <br/>(weather.csv)   |int| minimum temperature (F)
+ |Tavg  <br/>(weather.csv)|int| average temperature (F)
+ |Depart <br/>(weather.csv)    |int| departure from normal temperature (F)
+ |Dewpoint <br/>(weather.csv)   |int| average dew point (F)
+ |WetBulb <br/>(weather.csv)  |int| average wet bulb (F)
+ |Heat <br/>(weather.csv)    |int| degree days of heat (base 65 F)
+ |Cool <br/>(weather.csv)  |int| degree days of cool (base 65 F)
+ |Sunrise <br/>(weather.csv)    |int| time of sunrise (calculated)
+ |Sunset <br/>(weather.csv)    |int| time of sunset (calculated)
+ |CodeSum <br/>(weather.csv)    |str| code of weather type
+ |Depth <br/>(weather.csv)    |int| snow depth (inch)
+ |Water1 <br/>(weather.csv) |int| water equivalent (inch)
+ |SnowFall <br/>(weather.csv)    |int|snowfall (inch)
+ |PrecipTotal <br/>(weather.csv)    |str|Amount of rainfall (inch)
+ |StnPressure <br/>(weather.csv)    |int|average station pressure (inch hg)
+ |SeaLevel <br/>(weather.csv)    |int|average sea level pressure (inch hg)
+ |ResultSpeed <br/>(weather.csv) |float|wind speed (mph)
+ |ResultDir <br/>(weather.csv)    |int|wind direction (degrees)
+ |AvgSpeed <br/>(weather.csv)    |int|average wind speed (mph)
+
+
+Presentation
+
+Bellini, R., Zeller, H. & Van Bortel, W. A review of the vector management methods to prevent and control outbreaks of West Nile virus infection and the challenge for Europe. Parasites Vectors 7, 323 (2014). https://doi.org/10.1186/1756-3305-7-323
+
+Idph.state.il.us. 2020. West Nile Virus In Illinois - Surveillance. [online] http://www.idph.state.il.us/envhealth/wnvsurveillance_humancases_13.htm
+
+Ruktanonchai, Duke J et al. “Effect of aerial insecticide spraying on West Nile virus disease--north-central Texas, 2012.” The American journal of tropical medicine and hygiene vol. 91,2 (2014): 240-5. doi:10.4269/ajtmh.14-0072
+
+Yao, Yi, and Ruth R Montgomery. “Role of Immune Aging in Susceptibility to West Nile Virus.” Methods in molecular biology (Clifton, N.J.) vol. 1435 (2016): 235-47. doi:10.1007/978-1-4939-3670-0_18
+
 
 
